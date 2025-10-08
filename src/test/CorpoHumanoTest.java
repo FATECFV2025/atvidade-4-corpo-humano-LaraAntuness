@@ -12,7 +12,7 @@ public class CorpoHumanoTest {
 
     @Before
     public void setUp() {
-        corpo = new CorpoHumano(70, 0.07, 1000, 1.75);
+        corpo = new CorpoHumano(70, 0.07f, 1000, 1.75f);
     }
 
     @Test
@@ -28,13 +28,13 @@ public class CorpoHumanoTest {
         corpo.setMassa(80);
         assertEquals(80, corpo.getMassa(), 0.01);
 
-        corpo.setVolume(0.08);
+        corpo.setVolume(0.08f);
         assertEquals(0.08, corpo.getVolume(), 0.01);
 
         corpo.setDensidade(1100);
         assertEquals(1100, corpo.getDensidade(), 0.01);
 
-        corpo.setAltura(1.80);
+        corpo.setAltura(1.80f);
         assertEquals(1.80, corpo.getAltura(), 0.01);
     }
 
@@ -44,7 +44,7 @@ public class CorpoHumanoTest {
         assertEquals(expectedIMC, corpo.calcularIMC(), 0.01);
 
         corpo.setMassa(80);
-        corpo.setAltura(1.80);
+        corpo.setAltura(1.80f);
         expectedIMC = 80 / (1.80 * 1.80);
         assertEquals(expectedIMC, corpo.calcularIMC(), 0.01);
     }
