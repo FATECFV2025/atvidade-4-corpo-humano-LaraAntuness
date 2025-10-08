@@ -18,9 +18,9 @@ public class CorpoHumanoTest {
     @Test
     public void testGetters() {
         assertEquals(70, corpo.getMassa(), 0.01);
-        assertEquals(0.07, corpo.getVolume(), 0.01);
+        assertEquals(0.07f, corpo.getVolume(), 0.01);
         assertEquals(1000, corpo.getDensidade(), 0.01);
-        assertEquals(1.75, corpo.getAltura(), 0.01);
+        assertEquals(1.75f, corpo.getAltura(), 0.01);
     }
 
     @Test
